@@ -1,7 +1,9 @@
-<?php /*Get your hands dirty with php code*/?>
+<?php /*Get your hands dirty with php code*/
+?>
 <html>
     <head>
         <title>Ecom</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
