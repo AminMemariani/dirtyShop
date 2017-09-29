@@ -7,6 +7,7 @@
  */
 session_start();
 include ("includes/connect.php");
+include ("includes/html_codes.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

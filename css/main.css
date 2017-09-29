@@ -133,3 +133,19 @@ a:active{
 .radius{
     border-radius: 7px;
 }
+.container{
+    width: 460px;
+}
+/*************Register Start**************/
+#left_side{
+    width: 490px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+#right_side{
+    margin-top: 10px;
+    float: left;
+    width: 500px;
+}
+/*************Register End**************/
