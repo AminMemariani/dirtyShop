@@ -89,3 +89,47 @@ a:active{
 .subtitles{
     color: #707070;
 }
+#wrapper{
+    width: 1000px;
+    margin: 15px auto 0;
+    text-align: left;
+}
+#main_header{ /* space with logo and links */
+
+}
+#rightAlign{
+    float: right;
+    text-align: right;
+}
+#top_search{
+    margin-top: 10px;
+    padding: 5px 0 5px 10px;
+    display: block;
+    background-color: #006699;
+}
+#main_aside {
+    width: 208px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-width: 1px;
+    float: left;
+}
+#main_section{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 780px;
+}
+#main_footer{
+    padding-top: 30px;
+    clear: both;
+    font-size: 10px;
+}
+.searchBox{
+    padding: 2px;
+    border:1px solid #b9bdc1;
+    color: #505050;
+}
+.radius{
+    border-radius: 7px;
+}
