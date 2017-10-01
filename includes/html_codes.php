@@ -92,5 +92,6 @@ function numberToCategory($n){
         default:
             $cat = "Category Does not Exist";
     }
+    return $cat;
 }
 ?>
