@@ -9,21 +9,22 @@
 function headerAndSearchCode(){
     $defaultText = htmlentities($_GET['keywords']);
     echo '
-        <header id=\"main_header\">
-            <div id=\"rightAlign\">
+        <header id="main_header">
+            <div id="rightAlign">
         </header>
     ';
     // Links
     topRightLinks();
     echo '
             </div>
-            <a href=\"index.php\" ><img src=\"imaages/mainLogo.png\"></a>
+            <a href=\"../index.php\" ><img src=\"../images/mainLogo.png\"></a>
         </header>
 
        <div id=\"top_search\">
             <form name=\"input\" action=\"search.php\" method=\"get\">
                 <input type=\"text\" id=\"keywords\" name=\"keywords\" size=\"100\" class=\"searchBox\" 
-                    value=\"$defaultText\"> &nbsp;
+                    value=\"
+                    $defaultText\"> &nbsp;
                 <select id=\"category\" name=\"category\" class=\"searchBox\">
     ';
     // include categories
@@ -36,10 +37,10 @@ function headerAndSearchCode(){
 }
 function topRightLinks(){
     if( isset($_SESSION['user_id']) ){
-        echo '<a href="register.php">Register</a> | <a href="login.php">Login</a>';
+        echo '<a href="../register.php">Register</a> | <a href="../login.php">Login</a>';
     }else{
         $x = $_SESSION['user_id'];
-        $result = mysqli_query("SELECT * FROM messages WHERE  receiver=$x AND status='unread'") or die(
+        $result = mysqli_query("SELECT * FROM messages WHERE receiver=$x AND status='unread' ") or die(
         mysqli_error());
         $num = mysqli_num_rows($result);
         if($num == 0){
